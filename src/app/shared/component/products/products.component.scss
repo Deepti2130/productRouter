@@ -1,0 +1,28 @@
+.imgcontainer{
+  height: 200px;
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+.pricecss{
+  text-decoration: line-through;
+}
+
+.offpricecss{
+ display: inline;
+}
+
+.noproduct{
+  position: absolute;
+  bottom: 0;
+  font-weight: bold;
+  left:40px
+}
+
+.notavail{
+  filter: blur(0.6px) grayscale(1.2);
+}

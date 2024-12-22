@@ -1,0 +1,16 @@
+<p>
+  This is product <strong>{{productobj.name}}</strong> with status is
+<strong>{{productobj.pstatus}}</strong></p>
+
+
+<button
+routerLink="edit"
+mat-raised-button color="primary" class="mr-3">
+  Edit product
+</button>
+
+<button
+(click)="onremoveproduct()"
+mat-raised-button color="warn">
+  Remove product
+</button>
