@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './shared/component/home/home.component';
@@ -25,7 +25,8 @@ import { PagenotfoundComponent } from './shared/component/pagenotfound/pagenotfo
     FairsComponent,
     ProductComponent,
     ProductformComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -33,7 +34,9 @@ import { PagenotfoundComponent } from './shared/component/pagenotfound/pagenotfo
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,8 @@ import { ProductComponent } from './shared/component/products/product/product.co
 import { ProductformComponent } from './shared/component/products/productform/productform.component';
 import { FairsComponent } from './shared/component/fairs/fairs.component';
 import { PagenotfoundComponent } from './shared/component/pagenotfound/pagenotfound.component';
+import { ProductResolverService } from './shared/service/product-resolver.service';
+import { ProductsingService } from './shared/service/productsing.service';
 
 const routes: Routes = [
   {
@@ -24,7 +26,8 @@ const routes: Routes = [
   },
   {
     path:"products",
-    component:ProductsComponent
+    component:ProductsComponent,
+    resolve:{productData:ProductResolverService}
   },
   {
     path:"products/addproduct",
@@ -32,7 +35,8 @@ const routes: Routes = [
   },
   {
     path:"products/:id",
-    component:ProductComponent
+    component:ProductComponent,
+    resolve:{productobj:ProductsingService}
   },
   {
     path:"products/:id/edit",
